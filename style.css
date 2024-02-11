@@ -30,17 +30,20 @@ h4 {
 }
 
 img {
-  display: block;
+  display: grid;
+}
+
+@media (max-width: 959px) {
+  img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-  @media (max-width: 960px) {
-    .header {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
+  img {
+    max-width: 100%;
+  }
 }
